@@ -1,0 +1,32 @@
+nohup: ignoring input
+[Tue Mar 31 01:26:29 2026] PHP 8.5.4 Development Server (http://localhost:8000) started
+[Tue Mar 31 01:26:37 2026] [::1]:54414 Accepted
+[Tue Mar 31 01:26:37 2026] [::1]:54414 [200]: HEAD /
+[Tue Mar 31 01:26:37 2026] [::1]:54414 Closing
+[Tue Mar 31 01:27:00 2026] [::1]:58258 Accepted
+[Tue Mar 31 01:27:00 2026] [::1]:58258 [200]: GET /
+[Tue Mar 31 01:27:00 2026] [::1]:58258 Closing
+[Tue Mar 31 01:27:00 2026] [::1]:58274 Accepted
+[Tue Mar 31 01:27:00 2026] [::1]:58274 [200]: GET /assets/js/app.js
+[Tue Mar 31 01:27:00 2026] [::1]:58286 Accepted
+[Tue Mar 31 01:27:00 2026] [::1]:58274 Closing
+[Tue Mar 31 01:27:00 2026] [::1]:58286 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 01:27:00 2026] [::1]:58286 Closing
+[Tue Mar 31 01:27:00 2026] [::1]:58288 Accepted
+[Tue Mar 31 01:27:00 2026] [::1]:58288 [200]: GET /assets/css/style.css
+[Tue Mar 31 01:27:00 2026] [::1]:58288 Closing
+[Tue Mar 31 01:27:00 2026] [::1]:58294 Accepted
+[Tue Mar 31 01:27:00 2026] [::1]:58294 [200]: GET /api/stats
+[Tue Mar 31 01:27:00 2026] [::1]:58294 Closing
+[Tue Mar 31 01:27:04 2026] [::1]:58302 Accepted
+[Tue Mar 31 01:27:09 2026] [::1]:58302 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 01:27:09 2026] [::1]:58302 Closing
+[Tue Mar 31 01:27:12 2026] [::1]:45444 Accepted
+[Tue Mar 31 01:27:17 2026] [::1]:45444 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 01:27:17 2026] [::1]:45444 Closing
+[Tue Mar 31 17:25:17 2026] [::1]:42934 Accepted
+[Tue Mar 31 17:25:22 2026] [::1]:42934 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 17:25:22 2026] [::1]:42934 Closing
+[Tue Mar 31 17:25:59 2026] [::1]:42762 Accepted
+[Tue Mar 31 17:26:04 2026] [::1]:42762 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 17:26:04 2026] [::1]:42762 Closing
