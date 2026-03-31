@@ -33,10 +33,26 @@ function handle_clientes($db, $method, $id, $body) {
             }
             break;
             
-        case 'PUT': // No implementado en demo corta
-        case 'DELETE':
+        case 'PUT':
             http_response_code(501);
-            echo json_encode(['error' => 'Método no implementado en esta demo corta']);
+            echo json_encode(['error' => 'Método PUT no implementado']);
+            break;
+            
+        case 'DELETE': // Eliminar cliente
+            if ($id) {
+                // Solo Admin debería poder borrar (RBAC) - aunque está validado en JS, podemos forzar en PHP
+                if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'Admin') {
+                    http_response_code(403);
+                    echo json_encode(['error' => 'Solo un Administrador puede borrar clientes']);
+                    return;
+                }
+
+                $resultado = $db->execute("DELETE FROM clientes WHERE id = ?", [$id]);
+                echo json_encode(['status' => 'success', 'message' => "Cliente $id eliminado"]);
+            } else {
+                http_response_code(400);
+                echo json_encode(['error' => 'ID de cliente requerido para borrar']);
+            }
             break;
     }
 }

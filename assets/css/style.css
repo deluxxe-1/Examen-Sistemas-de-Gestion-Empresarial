@@ -323,6 +323,40 @@ pre code {
   font-family: 'Fira Code', Consolas, Monaco, 'Courier New', monospace;
 }
 
+/* Login UI & Auth */
+.login-overlay {
+  display: flex;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--bg-primary); /* Full solid background to hide the app */
+  z-index: 9999; /* Highest priority */
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.login-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.auth-hidden {
+  display: none !important;
+}
+
 /* Table styling CRM */
 .crm-table {
   width: 100%;

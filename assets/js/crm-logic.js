@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const titles = {
         'dashboard': 'Dashboard Analítico',
         'clientes': 'Directorio de Clientes',
+        'pagos': 'Facturación y Historial de Pagos',
+        'empleados': 'Recursos Humanos y Nóminas',
         'seguridad': 'Seguridad y Credenciales',
         'apidocs': 'Documentación de Integración'
     };
@@ -20,8 +22,74 @@ document.addEventListener('DOMContentLoaded', () => {
             loadClientes();
         } else if (hash === 'dashboard') {
             loadDashboard();
+        } else if (hash === 'pagos') {
+            loadPagos();
+        } else if (hash === 'empleados') {
+            loadEmpleados();
         }
     });
+
+    // --- NUEVO: PAGOS ---
+    async function loadPagos() {
+        const tableBody = document.querySelector('#crm-pagos-table tbody');
+        if (!tableBody) return;
+        tableBody.innerHTML = '<tr><td colspan="6" style="text-align:center;">Cargando pagos...</td></tr>';
+        try {
+            const res = await fetch('/api/pagos');
+            const data = await res.json();
+            if (data.status === 'success' && data.data.length > 0) {
+                tableBody.innerHTML = '';
+                data.data.forEach(p => {
+                    const statusColor = p.estado === 'Cobrado' ? 'bg-green' : (p.estado === 'Cancelado' ? 'bg-danger' : 'bg-yellow');
+                    tableBody.innerHTML += `
+                        <tr>
+                            <td><strong>#${p.id}-INV</strong></td>
+                            <td>${p.cliente_nombre || 'Cliente Anónimo'}</td>
+                            <td style="font-size:0.85rem; color:var(--text-secondary);">${new Date(p.fecha_pedido).toLocaleDateString()}</td>
+                            <td style="font-weight:bold;">${p.total} €</td>
+                            <td>Transferencia</td>
+                            <td><span class="badge ${statusColor}">${p.estado}</span></td>
+                        </tr>
+                    `;
+                });
+            } else {
+                tableBody.innerHTML = '<tr><td colspan="6" style="text-align:center;">No hay registros de facturación todavía.</td></tr>';
+            }
+        } catch(e) {
+            tableBody.innerHTML = `<tr><td colspan="6" style="text-align:center; color:var(--danger);">Error cargando pagos: ${e.message}</td></tr>`;
+        }
+    }
+
+    // --- NUEVO: EMPLEADOS ---
+    async function loadEmpleados() {
+        const tableBody = document.querySelector('#crm-empleados-table tbody');
+        if (!tableBody) return;
+        tableBody.innerHTML = '<tr><td colspan="5" style="text-align:center;">Verificando credenciales corporativas...</td></tr>';
+        
+        try {
+            const res = await fetch('/api/empleados');
+            const data = await res.json();
+            if (res.ok && data.status === 'success') {
+                tableBody.innerHTML = '';
+                data.data.forEach(u => {
+                    const rolBadge = u.rol === 'Admin' ? 'bg-purple' : 'bg-blue';
+                    tableBody.innerHTML += `
+                        <tr>
+                            <td>#${u.id}</td>
+                            <td><strong>${u.nombre}</strong></td>
+                            <td style="color:var(--text-secondary);">${u.email}</td>
+                            <td><span class="badge ${rolBadge}">${u.rol}</span></td>
+                            <td style="font-size:0.85rem;">${new Date(u.fecha_alta).toLocaleDateString()}</td>
+                        </tr>
+                    `;
+                });
+            } else {
+                tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; color:var(--danger)">Acceso denegado a RRHH (Se requiere rol Admin). Fallo: ${data.error || 'Autenticación fallida'}</td></tr>`;
+            }
+        } catch(e) {
+            tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; color:var(--danger);">Error cargando plantilla.</td></tr>`;
+        }
+    }
 
     // --- 2. DASHBOARD (Pregunta 12: Informes) ---
     let chartsLoaded = false;
@@ -122,6 +190,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadClientes() {
         if (!tableBody) return;
+        
+        // Hide create button for non-admins forcefully
+        const btnNuevo = document.getElementById('btn-nuevo-cliente');
+        if (btnNuevo && window.currentUser && window.currentUser.rol !== 'Admin') {
+            btnNuevo.remove(); // Destruirlo del DOM totalmente
+        }
+
         tableBody.innerHTML = '<tr><td colspan="6" style="text-align:center;">Cargando directorio...</td></tr>';
         try {
             const res = await fetch('/api/clientes');
@@ -141,10 +216,31 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>${getSegmentBadge(c.segmento)}</td>
                             <td style="font-size:0.85rem; color:var(--text-secondary);">${new Date(c.fecha_registro).toLocaleDateString()}</td>
                             <td class="action-btns">
-                                <button class="btn btn-sm btn-secondary" onclick="alert('Demo: Editar ${c.id}')">✏️</button>
+                                <button class="btn btn-sm btn-secondary" onclick="alert('Demo: Editar ficha de ${c.nombre} #${c.id} (Redirección a formulario de edición)')">✏️</button>
+                                ${window.currentUser && window.currentUser.rol === 'Admin' ? `<button class="btn btn-sm btn-danger btn-delete-cliente" data-id="${c.id}" title="Eliminar (Solo Admin)">🗑️</button>` : ``}
                             </td>
                         </tr>
                     `;
+                });
+
+                // Attach events to delete buttons
+                document.querySelectorAll('.btn-delete-cliente').forEach(btn => {
+                    btn.addEventListener('click', async (e) => {
+                        const id = e.currentTarget.getAttribute('data-id');
+                        if (confirm(`¿Estás seguro de que deseas eliminar el cliente #${id} de la base de datos de forma permanente?`)) {
+                            try {
+                                const delRes = await fetch(`/api/clientes/${id}`, { method: 'DELETE' });
+                                if (delRes.ok) {
+                                    loadClientes();
+                                } else {
+                                    const err = await delRes.json();
+                                    alert('Error: ' + err.error);
+                                }
+                            } catch(err) {
+                                alert('Error de red al eliminar.');
+                            }
+                        }
+                    });
                 });
             } else {
                 tableBody.innerHTML = '<tr><td colspan="6" style="text-align:center;">No hay clientes en la base de datos.</td></tr>';

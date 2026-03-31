@@ -30,3 +30,705 @@ nohup: ignoring input
 [Tue Mar 31 17:25:59 2026] [::1]:42762 Accepted
 [Tue Mar 31 17:26:04 2026] [::1]:42762 Closed without sending a request; it was probably just an unused speculative preconnection
 [Tue Mar 31 17:26:04 2026] [::1]:42762 Closing
+[Tue Mar 31 18:14:32 2026] [::1]:57696 Accepted
+[Tue Mar 31 18:14:32 2026] [::1]:57696 [200]: GET /
+[Tue Mar 31 18:14:32 2026] [::1]:57696 Closing
+[Tue Mar 31 18:14:32 2026] [::1]:57698 Accepted
+[Tue Mar 31 18:14:32 2026] [::1]:57698 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:14:32 2026] [::1]:57704 Accepted
+[Tue Mar 31 18:14:32 2026] [::1]:57698 Closing
+[Tue Mar 31 18:14:32 2026] [::1]:57704 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:14:32 2026] [::1]:57704 Closing
+[Tue Mar 31 18:14:32 2026] [::1]:57708 Accepted
+[Tue Mar 31 18:14:32 2026] [::1]:57708 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:14:32 2026] [::1]:57708 Closing
+[Tue Mar 31 18:14:32 2026] [::1]:57720 Accepted
+[Tue Mar 31 18:14:32 2026] [::1]:57720 [200]: GET /api/stats
+[Tue Mar 31 18:14:32 2026] [::1]:57720 Closing
+[Tue Mar 31 18:14:38 2026] [::1]:57722 Accepted
+[Tue Mar 31 18:14:43 2026] [::1]:57722 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 18:14:43 2026] [::1]:57722 Closing
+[Tue Mar 31 18:15:24 2026] [::1]:34630 Accepted
+[Tue Mar 31 18:15:30 2026] [::1]:34630 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 18:15:30 2026] [::1]:34630 Closing
+[Tue Mar 31 18:17:06 2026] [::1]:56116 Accepted
+[Tue Mar 31 18:17:11 2026] [::1]:56116 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 18:17:11 2026] [::1]:56116 Closing
+[Tue Mar 31 18:17:20 2026] [::1]:50706 Accepted
+[Tue Mar 31 18:17:20 2026] [::1]:50706 [201]: POST /api/clientes
+[Tue Mar 31 18:17:20 2026] [::1]:50706 Closing
+[Tue Mar 31 18:17:20 2026] [::1]:50722 Accepted
+[Tue Mar 31 18:17:20 2026] [::1]:50722 [200]: GET /api/clientes
+[Tue Mar 31 18:17:20 2026] [::1]:50722 Closing
+[Tue Mar 31 18:17:43 2026] [::1]:47306 Accepted
+[Tue Mar 31 18:17:43 2026] [::1]:47306 [200]: GET /api/clientes
+[Tue Mar 31 18:17:43 2026] [::1]:47306 Closing
+[Tue Mar 31 18:23:42 2026] [::1]:57148 Accepted
+[Tue Mar 31 18:23:42 2026] [::1]:57148 [200]: GET /
+[Tue Mar 31 18:23:42 2026] [::1]:57148 Closing
+[Tue Mar 31 18:23:42 2026] [::1]:57160 Accepted
+[Tue Mar 31 18:23:42 2026] [::1]:57168 Accepted
+[Tue Mar 31 18:23:42 2026] [::1]:57168 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:23:42 2026] [::1]:57160 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:23:42 2026] [::1]:57170 Accepted
+[Tue Mar 31 18:23:42 2026] [::1]:57168 Closing
+[Tue Mar 31 18:23:42 2026] [::1]:57160 Closing
+[Tue Mar 31 18:23:42 2026] [::1]:57170 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:23:42 2026] [::1]:57170 Closing
+[Tue Mar 31 18:23:42 2026] [::1]:57182 Accepted
+[Tue Mar 31 18:23:42 2026] [::1]:57182 [401]: GET /api/auth/me
+[Tue Mar 31 18:23:42 2026] [::1]:57182 Closing
+[Tue Mar 31 18:23:42 2026] [::1]:57198 Accepted
+[Tue Mar 31 18:23:42 2026] [::1]:57198 [401]: GET /api/clientes
+[Tue Mar 31 18:23:42 2026] [::1]:57198 Closing
+[Tue Mar 31 18:23:45 2026] [::1]:57212 Accepted
+[Tue Mar 31 18:23:45 2026] [::1]:57212 [200]: POST /api/auth/login
+[Tue Mar 31 18:23:45 2026] [::1]:57212 Closing
+[Tue Mar 31 18:23:45 2026] [::1]:57224 Accepted
+[Tue Mar 31 18:23:45 2026] [::1]:57224 [200]: GET /api/auth/me
+[Tue Mar 31 18:23:45 2026] [::1]:57224 Closing
+[Tue Mar 31 18:23:45 2026] [::1]:57232 Accepted
+[Tue Mar 31 18:23:45 2026] [::1]:57232 [200]: GET /api/clientes
+[Tue Mar 31 18:23:45 2026] [::1]:57232 Closing
+[Tue Mar 31 18:23:46 2026] [::1]:57244 Accepted
+[Tue Mar 31 18:23:47 2026] [::1]:57244 [200]: POST /api/auth/logout
+[Tue Mar 31 18:23:47 2026] [::1]:57244 Closing
+[Tue Mar 31 18:23:47 2026] [::1]:57252 Accepted
+[Tue Mar 31 18:23:47 2026] [::1]:57252 [200]: GET /
+[Tue Mar 31 18:23:47 2026] [::1]:57252 Closing
+[Tue Mar 31 18:23:47 2026] [::1]:57260 Accepted
+[Tue Mar 31 18:23:47 2026] [::1]:57260 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:23:47 2026] [::1]:57260 Closing
+[Tue Mar 31 18:23:47 2026] [::1]:57268 Accepted
+[Tue Mar 31 18:23:47 2026] [::1]:57268 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:23:47 2026] [::1]:57268 Closing
+[Tue Mar 31 18:23:47 2026] [::1]:57284 Accepted
+[Tue Mar 31 18:23:47 2026] [::1]:57284 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:23:47 2026] [::1]:57284 Closing
+[Tue Mar 31 18:23:47 2026] [::1]:57296 Accepted
+[Tue Mar 31 18:23:47 2026] [::1]:57296 [401]: GET /api/auth/me
+[Tue Mar 31 18:23:47 2026] [::1]:57296 Closing
+[Tue Mar 31 18:23:47 2026] [::1]:57310 Accepted
+[Tue Mar 31 18:23:47 2026] [::1]:57310 [401]: GET /api/clientes
+[Tue Mar 31 18:23:47 2026] [::1]:57310 Closing
+[Tue Mar 31 18:23:54 2026] [::1]:33298 Accepted
+[Tue Mar 31 18:23:54 2026] [::1]:33298 [200]: GET /
+[Tue Mar 31 18:23:54 2026] [::1]:33298 Closing
+[Tue Mar 31 18:23:54 2026] [::1]:33306 Accepted
+[Tue Mar 31 18:23:54 2026] [::1]:33306 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:23:54 2026] [::1]:33306 Closing
+[Tue Mar 31 18:23:54 2026] [::1]:33318 Accepted
+[Tue Mar 31 18:23:54 2026] [::1]:33318 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:23:54 2026] [::1]:33320 Accepted
+[Tue Mar 31 18:23:54 2026] [::1]:33318 Closing
+[Tue Mar 31 18:23:54 2026] [::1]:33320 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:23:54 2026] [::1]:33320 Closing
+[Tue Mar 31 18:23:54 2026] [::1]:33324 Accepted
+[Tue Mar 31 18:23:54 2026] [::1]:33324 [401]: GET /api/auth/me
+[Tue Mar 31 18:23:54 2026] [::1]:33324 Closing
+[Tue Mar 31 18:23:54 2026] [::1]:33330 Accepted
+[Tue Mar 31 18:23:54 2026] [::1]:33330 [401]: GET /api/clientes
+[Tue Mar 31 18:23:54 2026] [::1]:33330 Closing
+[Tue Mar 31 18:24:03 2026] [::1]:42808 Accepted
+[Tue Mar 31 18:24:03 2026] [::1]:42808 [200]: POST /api/auth/login
+[Tue Mar 31 18:24:03 2026] [::1]:42808 Closing
+[Tue Mar 31 18:24:03 2026] [::1]:42824 Accepted
+[Tue Mar 31 18:24:03 2026] [::1]:42824 [200]: GET /api/auth/me
+[Tue Mar 31 18:24:03 2026] [::1]:42824 Closing
+[Tue Mar 31 18:24:03 2026] [::1]:42826 Accepted
+[Tue Mar 31 18:24:03 2026] [::1]:42826 [200]: GET /api/clientes
+[Tue Mar 31 18:24:03 2026] [::1]:42826 Closing
+[Tue Mar 31 18:24:27 2026] [::1]:58816 Accepted
+[Tue Mar 31 18:24:33 2026] [::1]:58816 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 18:24:33 2026] [::1]:58816 Closing
+[Tue Mar 31 18:25:55 2026] [::1]:52482 Accepted
+[Tue Mar 31 18:25:55 2026] [::1]:52482 [200]: GET /
+[Tue Mar 31 18:25:55 2026] [::1]:52482 Closing
+[Tue Mar 31 18:25:55 2026] [::1]:52498 Accepted
+[Tue Mar 31 18:25:55 2026] [::1]:52498 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:25:55 2026] [::1]:52500 Accepted
+[Tue Mar 31 18:25:55 2026] [::1]:52498 Closing
+[Tue Mar 31 18:25:55 2026] [::1]:52500 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:25:55 2026] [::1]:52500 Closing
+[Tue Mar 31 18:25:55 2026] [::1]:52510 Accepted
+[Tue Mar 31 18:25:55 2026] [::1]:52510 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:25:55 2026] [::1]:52510 Closing
+[Tue Mar 31 18:25:55 2026] [::1]:52514 Accepted
+[Tue Mar 31 18:25:55 2026] [::1]:52514 [200]: GET /api/auth/me
+[Tue Mar 31 18:25:55 2026] [::1]:52514 Closing
+[Tue Mar 31 18:25:55 2026] [::1]:52528 Accepted
+[Tue Mar 31 18:25:55 2026] [::1]:52528 [200]: GET /api/clientes
+[Tue Mar 31 18:25:55 2026] [::1]:52528 Closing
+[Tue Mar 31 18:25:55 2026] [::1]:52544 Accepted
+[Tue Mar 31 18:25:55 2026] [::1]:52544 [200]: GET /api/clientes
+[Tue Mar 31 18:25:55 2026] [::1]:52544 Closing
+[Tue Mar 31 18:27:16 2026] [::1]:35996 Accepted
+[Tue Mar 31 18:27:16 2026] [::1]:35996 [200]: GET /
+[Tue Mar 31 18:27:16 2026] [::1]:35996 Closing
+[Tue Mar 31 18:27:16 2026] [::1]:36012 Accepted
+[Tue Mar 31 18:27:16 2026] [::1]:36028 Accepted
+[Tue Mar 31 18:27:16 2026] [::1]:36028 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:27:16 2026] [::1]:36012 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:27:16 2026] [::1]:36044 Accepted
+[Tue Mar 31 18:27:16 2026] [::1]:36028 Closing
+[Tue Mar 31 18:27:16 2026] [::1]:36012 Closing
+[Tue Mar 31 18:27:16 2026] [::1]:36044 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:27:16 2026] [::1]:36044 Closing
+[Tue Mar 31 18:27:16 2026] [::1]:36050 Accepted
+[Tue Mar 31 18:27:16 2026] [::1]:36050 [200]: GET /api/auth/me
+[Tue Mar 31 18:27:16 2026] [::1]:36050 Closing
+[Tue Mar 31 18:27:16 2026] [::1]:36062 Accepted
+[Tue Mar 31 18:27:16 2026] [::1]:36062 [200]: GET /api/clientes
+[Tue Mar 31 18:27:16 2026] [::1]:36062 Closing
+[Tue Mar 31 18:27:16 2026] [::1]:36070 Accepted
+[Tue Mar 31 18:27:16 2026] [::1]:36070 [200]: GET /api/clientes
+[Tue Mar 31 18:27:16 2026] [::1]:36070 Closing
+[Tue Mar 31 18:27:21 2026] [::1]:33896 Accepted
+[Tue Mar 31 18:27:21 2026] [::1]:33896 [200]: POST /api/auth/logout
+[Tue Mar 31 18:27:21 2026] [::1]:33896 Closing
+[Tue Mar 31 18:27:21 2026] [::1]:33898 Accepted
+[Tue Mar 31 18:27:21 2026] [::1]:33898 [200]: GET /
+[Tue Mar 31 18:27:21 2026] [::1]:33898 Closing
+[Tue Mar 31 18:27:22 2026] [::1]:33914 Accepted
+[Tue Mar 31 18:27:22 2026] [::1]:33914 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:27:22 2026] [::1]:33914 Closing
+[Tue Mar 31 18:27:22 2026] [::1]:33926 Accepted
+[Tue Mar 31 18:27:22 2026] [::1]:33926 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:27:22 2026] [::1]:33936 Accepted
+[Tue Mar 31 18:27:22 2026] [::1]:33926 Closing
+[Tue Mar 31 18:27:22 2026] [::1]:33936 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:27:22 2026] [::1]:33936 Closing
+[Tue Mar 31 18:27:22 2026] [::1]:33946 Accepted
+[Tue Mar 31 18:27:22 2026] [::1]:33946 [401]: GET /api/auth/me
+[Tue Mar 31 18:27:22 2026] [::1]:33946 Closing
+[Tue Mar 31 18:27:22 2026] [::1]:33960 Accepted
+[Tue Mar 31 18:27:22 2026] [::1]:33960 [401]: GET /api/clientes
+[Tue Mar 31 18:27:22 2026] [::1]:33960 Closing
+[Tue Mar 31 18:27:23 2026] [::1]:33968 Accepted
+[Tue Mar 31 18:27:24 2026] [::1]:33968 [200]: POST /api/auth/login
+[Tue Mar 31 18:27:24 2026] [::1]:33968 Closing
+[Tue Mar 31 18:27:24 2026] [::1]:33970 Accepted
+[Tue Mar 31 18:27:24 2026] [::1]:33970 [200]: GET /api/auth/me
+[Tue Mar 31 18:27:24 2026] [::1]:33970 Closing
+[Tue Mar 31 18:27:24 2026] [::1]:33982 Accepted
+[Tue Mar 31 18:27:24 2026] [::1]:33982 [200]: GET /api/clientes
+[Tue Mar 31 18:27:24 2026] [::1]:33982 Closing
+[Tue Mar 31 18:27:27 2026] [::1]:33992 Accepted
+[Tue Mar 31 18:27:33 2026] [::1]:33992 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 18:27:33 2026] [::1]:33992 Closing
+[Tue Mar 31 18:27:33 2026] [::1]:41978 Accepted
+[Tue Mar 31 18:27:33 2026] [::1]:41978 [200]: GET /
+[Tue Mar 31 18:27:33 2026] [::1]:41978 Closing
+[Tue Mar 31 18:27:33 2026] [::1]:41990 Accepted
+[Tue Mar 31 18:27:33 2026] [::1]:41990 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:27:33 2026] [::1]:41994 Accepted
+[Tue Mar 31 18:27:33 2026] [::1]:41990 Closing
+[Tue Mar 31 18:27:33 2026] [::1]:41994 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:27:33 2026] [::1]:41994 Closing
+[Tue Mar 31 18:27:33 2026] [::1]:42010 Accepted
+[Tue Mar 31 18:27:33 2026] [::1]:42010 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:27:33 2026] [::1]:42010 Closing
+[Tue Mar 31 18:27:33 2026] [::1]:42016 Accepted
+[Tue Mar 31 18:27:33 2026] [::1]:42016 [200]: GET /api/auth/me
+[Tue Mar 31 18:27:33 2026] [::1]:42016 Closing
+[Tue Mar 31 18:27:33 2026] [::1]:42032 Accepted
+[Tue Mar 31 18:27:33 2026] [::1]:42032 [200]: GET /api/stats
+[Tue Mar 31 18:27:33 2026] [::1]:42032 Closing
+[Tue Mar 31 18:27:33 2026] [::1]:42048 Accepted
+[Tue Mar 31 18:27:33 2026] [::1]:42048 [200]: GET /api/stats
+[Tue Mar 31 18:27:33 2026] [::1]:42048 Closing
+[Tue Mar 31 18:27:34 2026] [::1]:42052 Accepted
+[Tue Mar 31 18:27:35 2026] [::1]:42052 [200]: GET /api/clientes
+[Tue Mar 31 18:27:35 2026] [::1]:42052 Closing
+[Tue Mar 31 18:29:37 2026] [::1]:35342 Accepted
+[Tue Mar 31 18:29:37 2026] [::1]:35342 [200]: GET /
+[Tue Mar 31 18:29:37 2026] [::1]:35342 Closing
+[Tue Mar 31 18:29:37 2026] [::1]:35354 Accepted
+[Tue Mar 31 18:29:37 2026] [::1]:35358 Accepted
+[Tue Mar 31 18:29:37 2026] [::1]:35358 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:29:37 2026] [::1]:35358 Closing
+[Tue Mar 31 18:29:37 2026] [::1]:35354 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:29:37 2026] [::1]:35354 Closing
+[Tue Mar 31 18:29:37 2026] [::1]:35374 Accepted
+[Tue Mar 31 18:29:37 2026] [::1]:35374 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:29:37 2026] [::1]:35374 Closing
+[Tue Mar 31 18:29:37 2026] [::1]:35386 Accepted
+[Tue Mar 31 18:29:37 2026] [::1]:35386 [200]: GET /api/auth/me
+[Tue Mar 31 18:29:37 2026] [::1]:35386 Closing
+[Tue Mar 31 18:29:37 2026] [::1]:35388 Accepted
+[Tue Mar 31 18:29:37 2026] [::1]:35388 [200]: GET /api/clientes
+[Tue Mar 31 18:29:37 2026] [::1]:35388 Closing
+[Tue Mar 31 18:29:37 2026] [::1]:35404 Accepted
+[Tue Mar 31 18:29:37 2026] [::1]:35404 [200]: GET /api/clientes
+[Tue Mar 31 18:29:37 2026] [::1]:35404 Closing
+[Tue Mar 31 18:30:03 2026] [::1]:32976 Accepted
+[Tue Mar 31 18:30:03 2026] [::1]:32976 [200]: GET /
+[Tue Mar 31 18:30:03 2026] [::1]:32976 Closing
+[Tue Mar 31 18:30:03 2026] [::1]:32978 Accepted
+[Tue Mar 31 18:30:03 2026] [::1]:32978 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:30:03 2026] [::1]:32978 Closing
+[Tue Mar 31 18:30:03 2026] [::1]:32982 Accepted
+[Tue Mar 31 18:30:03 2026] [::1]:32982 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:30:03 2026] [::1]:32982 Closing
+[Tue Mar 31 18:30:03 2026] [::1]:32992 Accepted
+[Tue Mar 31 18:30:03 2026] [::1]:32992 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:30:03 2026] [::1]:32992 Closing
+[Tue Mar 31 18:30:03 2026] [::1]:32998 Accepted
+[Tue Mar 31 18:30:03 2026] [::1]:32998 [200]: GET /api/auth/me
+[Tue Mar 31 18:30:03 2026] [::1]:32998 Closing
+[Tue Mar 31 18:30:03 2026] [::1]:33006 Accepted
+[Tue Mar 31 18:30:03 2026] [::1]:33006 [200]: GET /api/clientes
+[Tue Mar 31 18:30:03 2026] [::1]:33006 Closing
+[Tue Mar 31 18:30:03 2026] [::1]:33018 Accepted
+[Tue Mar 31 18:30:03 2026] [::1]:33018 [200]: GET /api/clientes
+[Tue Mar 31 18:30:03 2026] [::1]:33018 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33034 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33034 [200]: GET /
+[Tue Mar 31 18:30:04 2026] [::1]:33034 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33044 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33044 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:30:04 2026] [::1]:33044 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33060 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33060 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:30:04 2026] [::1]:33060 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33062 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33062 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:30:04 2026] [::1]:33062 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33078 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33078 [200]: GET /api/auth/me
+[Tue Mar 31 18:30:04 2026] [::1]:33078 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33086 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33086 [200]: GET /api/clientes
+[Tue Mar 31 18:30:04 2026] [::1]:33086 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33092 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33092 [200]: GET /api/clientes
+[Tue Mar 31 18:30:04 2026] [::1]:33092 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33106 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33106 [200]: GET /
+[Tue Mar 31 18:30:04 2026] [::1]:33106 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33122 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33122 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:30:04 2026] [::1]:33128 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33122 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33128 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:30:04 2026] [::1]:33128 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33142 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33142 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:30:04 2026] [::1]:33142 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33144 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33144 [200]: GET /api/auth/me
+[Tue Mar 31 18:30:04 2026] [::1]:33144 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33154 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33154 [200]: GET /api/clientes
+[Tue Mar 31 18:30:04 2026] [::1]:33154 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33158 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33158 [200]: GET /api/clientes
+[Tue Mar 31 18:30:04 2026] [::1]:33158 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33166 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33166 [200]: GET /
+[Tue Mar 31 18:30:04 2026] [::1]:33166 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33182 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33182 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:30:04 2026] [::1]:33198 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33182 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33198 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:30:04 2026] [::1]:33198 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33202 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33202 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:30:04 2026] [::1]:33202 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33218 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33218 [200]: GET /api/auth/me
+[Tue Mar 31 18:30:04 2026] [::1]:33218 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33228 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33228 [200]: GET /api/clientes
+[Tue Mar 31 18:30:04 2026] [::1]:33228 Closing
+[Tue Mar 31 18:30:04 2026] [::1]:33232 Accepted
+[Tue Mar 31 18:30:04 2026] [::1]:33232 [200]: GET /api/clientes
+[Tue Mar 31 18:30:04 2026] [::1]:33232 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33242 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33242 [200]: GET /
+[Tue Mar 31 18:30:05 2026] [::1]:33242 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33246 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33246 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:30:05 2026] [::1]:33248 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33246 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33248 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:30:05 2026] [::1]:33248 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33254 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33254 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:30:05 2026] [::1]:33254 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33268 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33268 [200]: GET /api/auth/me
+[Tue Mar 31 18:30:05 2026] [::1]:33268 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33280 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33280 [200]: GET /api/clientes
+[Tue Mar 31 18:30:05 2026] [::1]:33280 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33284 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33284 [200]: GET /api/clientes
+[Tue Mar 31 18:30:05 2026] [::1]:33284 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33290 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33290 [200]: GET /
+[Tue Mar 31 18:30:05 2026] [::1]:33290 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33306 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33306 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:30:05 2026] [::1]:33306 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33318 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33318 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:30:05 2026] [::1]:33326 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33318 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33326 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:30:05 2026] [::1]:33326 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33332 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33332 [200]: GET /api/auth/me
+[Tue Mar 31 18:30:05 2026] [::1]:33332 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33346 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33346 [200]: GET /api/clientes
+[Tue Mar 31 18:30:05 2026] [::1]:33346 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33362 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33362 [200]: GET /api/clientes
+[Tue Mar 31 18:30:05 2026] [::1]:33362 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33376 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33376 [200]: GET /
+[Tue Mar 31 18:30:05 2026] [::1]:33376 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33378 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33378 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:30:05 2026] [::1]:33392 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33378 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33392 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:30:05 2026] [::1]:33392 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33406 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33406 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:30:05 2026] [::1]:33406 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33422 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33422 [200]: GET /api/auth/me
+[Tue Mar 31 18:30:05 2026] [::1]:33422 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33436 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33436 [200]: GET /api/clientes
+[Tue Mar 31 18:30:05 2026] [::1]:33436 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33448 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33448 [200]: GET /api/clientes
+[Tue Mar 31 18:30:05 2026] [::1]:33448 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33460 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33460 [200]: GET /
+[Tue Mar 31 18:30:05 2026] [::1]:33460 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33466 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33466 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:30:05 2026] [::1]:33466 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33478 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33478 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:30:05 2026] [::1]:33478 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33482 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33482 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:30:05 2026] [::1]:33482 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33486 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33486 [200]: GET /api/auth/me
+[Tue Mar 31 18:30:05 2026] [::1]:33486 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33488 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33488 [200]: GET /api/clientes
+[Tue Mar 31 18:30:05 2026] [::1]:33488 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33490 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33490 [200]: GET /api/clientes
+[Tue Mar 31 18:30:05 2026] [::1]:33490 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33494 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33494 [200]: GET /
+[Tue Mar 31 18:30:05 2026] [::1]:33494 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33508 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33508 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:30:05 2026] [::1]:33516 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33508 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33516 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:30:05 2026] [::1]:33516 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33526 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33526 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:30:05 2026] [::1]:33526 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33532 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33532 [200]: GET /api/auth/me
+[Tue Mar 31 18:30:05 2026] [::1]:33532 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33548 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33548 [200]: GET /api/clientes
+[Tue Mar 31 18:30:05 2026] [::1]:33548 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33552 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33552 [200]: GET /api/clientes
+[Tue Mar 31 18:30:05 2026] [::1]:33552 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33566 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33566 [200]: GET /
+[Tue Mar 31 18:30:05 2026] [::1]:33566 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33570 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33570 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:30:05 2026] [::1]:33574 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33570 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33574 [200]: GET /assets/js/app.js
+[Tue Mar 31 18:30:05 2026] [::1]:33574 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33580 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33580 [200]: GET /assets/js/crm-logic.js
+[Tue Mar 31 18:30:05 2026] [::1]:33580 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33586 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33586 [200]: GET /api/auth/me
+[Tue Mar 31 18:30:05 2026] [::1]:33586 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33590 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33590 [200]: GET /api/clientes
+[Tue Mar 31 18:30:05 2026] [::1]:33590 Closing
+[Tue Mar 31 18:30:05 2026] [::1]:33594 Accepted
+[Tue Mar 31 18:30:05 2026] [::1]:33594 [200]: GET /api/clientes
+[Tue Mar 31 18:30:05 2026] [::1]:33594 Closing
+[Tue Mar 31 18:30:20 2026] [::1]:46020 Accepted
+[Tue Mar 31 18:30:20 2026] [::1]:46020 [200]: GET /
+[Tue Mar 31 18:30:20 2026] [::1]:46020 Closing
+[Tue Mar 31 18:30:20 2026] [::1]:46034 Accepted
+[Tue Mar 31 18:30:20 2026] [::1]:46036 Accepted
+[Tue Mar 31 18:30:20 2026] [::1]:46036 [200]: GET /assets/js/app.js?v=4
+[Tue Mar 31 18:30:20 2026] [::1]:46034 [200]: GET /assets/js/crm-logic.js?v=4
+[Tue Mar 31 18:30:20 2026] [::1]:46038 Accepted
+[Tue Mar 31 18:30:20 2026] [::1]:46036 Closing
+[Tue Mar 31 18:30:20 2026] [::1]:46034 Closing
+[Tue Mar 31 18:30:20 2026] [::1]:46038 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:30:20 2026] [::1]:46038 Closing
+[Tue Mar 31 18:30:20 2026] [::1]:46044 Accepted
+[Tue Mar 31 18:30:20 2026] [::1]:46044 [200]: GET /api/auth/me
+[Tue Mar 31 18:30:20 2026] [::1]:46044 Closing
+[Tue Mar 31 18:30:20 2026] [::1]:46046 Accepted
+[Tue Mar 31 18:30:20 2026] [::1]:46046 [200]: GET /api/stats
+[Tue Mar 31 18:30:20 2026] [::1]:46046 Closing
+[Tue Mar 31 18:30:20 2026] [::1]:46056 Accepted
+[Tue Mar 31 18:30:20 2026] [::1]:46056 [200]: GET /api/stats
+[Tue Mar 31 18:30:20 2026] [::1]:46056 Closing
+[Tue Mar 31 18:30:22 2026] [::1]:35728 Accepted
+[Tue Mar 31 18:30:24 2026] [::1]:35728 [200]: GET /api/clientes
+[Tue Mar 31 18:30:24 2026] [::1]:35728 Closing
+[Tue Mar 31 18:30:25 2026] [::1]:35740 Accepted
+[Tue Mar 31 18:30:31 2026] [::1]:35740 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 18:30:31 2026] [::1]:35740 Closing
+[Tue Mar 31 18:30:35 2026] [::1]:52698 Accepted
+[Tue Mar 31 18:30:36 2026] [::1]:52698 [200]: GET /
+[Tue Mar 31 18:30:36 2026] [::1]:52698 Closing
+[Tue Mar 31 18:30:36 2026] [::1]:52704 Accepted
+[Tue Mar 31 18:30:36 2026] [::1]:52704 [200]: GET /assets/js/app.js?v=4
+[Tue Mar 31 18:30:36 2026] [::1]:52716 Accepted
+[Tue Mar 31 18:30:36 2026] [::1]:52704 Closing
+[Tue Mar 31 18:30:36 2026] [::1]:52716 [200]: GET /assets/js/crm-logic.js?v=4
+[Tue Mar 31 18:30:36 2026] [::1]:52716 Closing
+[Tue Mar 31 18:30:36 2026] [::1]:52724 Accepted
+[Tue Mar 31 18:30:36 2026] [::1]:52724 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:30:36 2026] [::1]:52724 Closing
+[Tue Mar 31 18:30:36 2026] [::1]:52730 Accepted
+[Tue Mar 31 18:30:36 2026] [::1]:52730 [200]: GET /api/auth/me
+[Tue Mar 31 18:30:36 2026] [::1]:52730 Closing
+[Tue Mar 31 18:30:36 2026] [::1]:52732 Accepted
+[Tue Mar 31 18:30:36 2026] [::1]:52732 [200]: GET /api/stats
+[Tue Mar 31 18:30:36 2026] [::1]:52732 Closing
+[Tue Mar 31 18:30:36 2026] [::1]:52738 Accepted
+[Tue Mar 31 18:30:36 2026] [::1]:52738 [200]: GET /api/stats
+[Tue Mar 31 18:30:36 2026] [::1]:52738 Closing
+[Tue Mar 31 18:30:38 2026] [::1]:52748 Accepted
+[Tue Mar 31 18:30:39 2026] [::1]:52748 [200]: GET /api/clientes
+[Tue Mar 31 18:30:39 2026] [::1]:52748 Closing
+[Tue Mar 31 18:30:39 2026] [::1]:52762 Accepted
+[Tue Mar 31 18:30:40 2026] [::1]:52762 [200]: POST /api/auth/logout
+[Tue Mar 31 18:30:40 2026] [::1]:52762 Closing
+[Tue Mar 31 18:30:40 2026] [::1]:52774 Accepted
+[Tue Mar 31 18:30:40 2026] [::1]:52774 [200]: GET /
+[Tue Mar 31 18:30:40 2026] [::1]:52774 Closing
+[Tue Mar 31 18:30:40 2026] [::1]:52784 Accepted
+[Tue Mar 31 18:30:40 2026] [::1]:52784 [200]: GET /assets/js/app.js?v=4
+[Tue Mar 31 18:30:40 2026] [::1]:52784 Closing
+[Tue Mar 31 18:30:40 2026] [::1]:52788 Accepted
+[Tue Mar 31 18:30:40 2026] [::1]:52788 [200]: GET /assets/js/crm-logic.js?v=4
+[Tue Mar 31 18:30:40 2026] [::1]:52788 Closing
+[Tue Mar 31 18:30:40 2026] [::1]:52804 Accepted
+[Tue Mar 31 18:30:40 2026] [::1]:52804 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:30:40 2026] [::1]:52804 Closing
+[Tue Mar 31 18:30:40 2026] [::1]:52810 Accepted
+[Tue Mar 31 18:30:40 2026] [::1]:52810 [401]: GET /api/auth/me
+[Tue Mar 31 18:30:40 2026] [::1]:52810 Closing
+[Tue Mar 31 18:30:40 2026] [::1]:52824 Accepted
+[Tue Mar 31 18:30:40 2026] [::1]:52824 [401]: GET /api/clientes
+[Tue Mar 31 18:30:40 2026] [::1]:52824 Closing
+[Tue Mar 31 18:30:42 2026] [::1]:35884 Accepted
+[Tue Mar 31 18:30:42 2026] [::1]:35884 [200]: POST /api/auth/login
+[Tue Mar 31 18:30:42 2026] [::1]:35884 Closing
+[Tue Mar 31 18:30:42 2026] [::1]:35900 Accepted
+[Tue Mar 31 18:30:42 2026] [::1]:35900 [200]: GET /api/auth/me
+[Tue Mar 31 18:30:42 2026] [::1]:35900 Closing
+[Tue Mar 31 18:30:42 2026] [::1]:35904 Accepted
+[Tue Mar 31 18:30:42 2026] [::1]:35904 [200]: GET /api/clientes
+[Tue Mar 31 18:30:42 2026] [::1]:35904 Closing
+[Tue Mar 31 18:30:42 2026] [::1]:35912 Accepted
+[Tue Mar 31 18:30:48 2026] [::1]:35912 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 18:30:48 2026] [::1]:35912 Closing
+[Tue Mar 31 18:30:48 2026] [::1]:35926 Accepted
+[Tue Mar 31 18:30:48 2026] [::1]:35926 [200]: GET /api/auth/me
+[Tue Mar 31 18:30:48 2026] [::1]:35926 Closing
+[Tue Mar 31 18:30:48 2026] [::1]:35940 Accepted
+[Tue Mar 31 18:30:48 2026] [::1]:35940 [200]: GET /api/clientes
+[Tue Mar 31 18:30:48 2026] [::1]:35940 Closing
+[Tue Mar 31 18:30:48 2026] [::1]:35952 Accepted
+[Tue Mar 31 18:30:48 2026] [::1]:35952 [200]: GET /api/clientes
+[Tue Mar 31 18:30:48 2026] [::1]:35952 Closing
+[Tue Mar 31 18:30:48 2026] [::1]:35964 Accepted
+[Tue Mar 31 18:30:50 2026] [::1]:35964 [200]: GET /api/clientes
+[Tue Mar 31 18:30:50 2026] [::1]:35964 Closing
+[Tue Mar 31 18:30:50 2026] [::1]:35970 Accepted
+[Tue Mar 31 18:30:56 2026] [::1]:35970 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 18:30:56 2026] [::1]:35970 Closing
+[Tue Mar 31 18:35:00 2026] [::1]:34482 Accepted
+[Tue Mar 31 18:35:02 2026] [::1]:34482 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 18:35:02 2026] [::1]:34482 Closing
+[Tue Mar 31 18:35:02 2026] [::1]:54062 Accepted
+[Tue Mar 31 18:35:02 2026] [::1]:54062 [200]: GET /
+[Tue Mar 31 18:35:02 2026] [::1]:54062 Closing
+[Tue Mar 31 18:35:02 2026] [::1]:54072 Accepted
+[Tue Mar 31 18:35:02 2026] [::1]:54072 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:35:02 2026] [::1]:54072 Closing
+[Tue Mar 31 18:35:02 2026] [::1]:54082 Accepted
+[Tue Mar 31 18:35:02 2026] [::1]:54082 [200]: GET /assets/js/app.js?v=5
+[Tue Mar 31 18:35:02 2026] [::1]:54082 Closing
+[Tue Mar 31 18:35:02 2026] [::1]:54090 Accepted
+[Tue Mar 31 18:35:02 2026] [::1]:54090 [200]: GET /assets/js/crm-logic.js?v=5
+[Tue Mar 31 18:35:02 2026] [::1]:54090 Closing
+[Tue Mar 31 18:35:02 2026] [::1]:54092 Accepted
+[Tue Mar 31 18:35:02 2026] [::1]:54092 [200]: GET /api/auth/me
+[Tue Mar 31 18:35:02 2026] [::1]:54092 Closing
+[Tue Mar 31 18:35:02 2026] [::1]:54104 Accepted
+[Tue Mar 31 18:35:02 2026] [::1]:54104 [200]: GET /api/clientes
+[Tue Mar 31 18:35:02 2026] [::1]:54104 Closing
+[Tue Mar 31 18:35:02 2026] [::1]:54120 Accepted
+[Tue Mar 31 18:35:02 2026] [::1]:54120 [200]: GET /api/clientes
+[Tue Mar 31 18:35:02 2026] [::1]:54120 Closing
+[Tue Mar 31 18:35:02 2026] [::1]:54130 Accepted
+[Tue Mar 31 18:35:02 2026] [::1]:54130 [200]: GET /favicon.ico
+[Tue Mar 31 18:35:02 2026] [::1]:54130 Closing
+[Tue Mar 31 18:35:37 2026] [::1]:49990 Accepted
+[Tue Mar 31 18:35:37 2026] [::1]:49990 [200]: GET /
+[Tue Mar 31 18:35:37 2026] [::1]:49990 Closing
+[Tue Mar 31 18:35:37 2026] [::1]:50000 Accepted
+[Tue Mar 31 18:35:37 2026] [::1]:50000 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:35:37 2026] [::1]:50000 Closing
+[Tue Mar 31 18:35:37 2026] [::1]:50012 Accepted
+[Tue Mar 31 18:35:37 2026] [::1]:50012 [200]: GET /assets/js/app.js?v=5
+[Tue Mar 31 18:35:37 2026] [::1]:50028 Accepted
+[Tue Mar 31 18:35:37 2026] [::1]:50012 Closing
+[Tue Mar 31 18:35:37 2026] [::1]:50028 [200]: GET /assets/js/crm-logic.js?v=5
+[Tue Mar 31 18:35:37 2026] [::1]:50028 Closing
+[Tue Mar 31 18:35:37 2026] [::1]:50038 Accepted
+[Tue Mar 31 18:35:37 2026] [::1]:50038 [401]: GET /api/auth/me
+[Tue Mar 31 18:35:37 2026] [::1]:50038 Closing
+[Tue Mar 31 18:35:37 2026] [::1]:50044 Accepted
+[Tue Mar 31 18:35:37 2026] [::1]:50044 [401]: GET /api/stats
+[Tue Mar 31 18:35:37 2026] [::1]:50044 Closing
+[Tue Mar 31 18:35:37 2026] [::1]:50054 Accepted
+[Tue Mar 31 18:35:37 2026] [::1]:50054 [200]: GET /favicon.ico
+[Tue Mar 31 18:35:37 2026] [::1]:50054 Closing
+[Tue Mar 31 18:35:39 2026] [::1]:50056 Accepted
+[Tue Mar 31 18:35:39 2026] [::1]:50056 [200]: POST /api/auth/login
+[Tue Mar 31 18:35:39 2026] [::1]:50056 Closing
+[Tue Mar 31 18:35:39 2026] [::1]:50062 Accepted
+[Tue Mar 31 18:35:39 2026] [::1]:50062 [200]: GET /api/auth/me
+[Tue Mar 31 18:35:39 2026] [::1]:50062 Closing
+[Tue Mar 31 18:35:40 2026] [::1]:50072 Accepted
+[Tue Mar 31 18:35:41 2026] [::1]:50072 [200]: GET /api/clientes
+[Tue Mar 31 18:35:41 2026] [::1]:50072 Closing
+[Tue Mar 31 18:35:43 2026] [::1]:42500 Accepted
+[Tue Mar 31 18:35:45 2026] [::1]:42500 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 18:35:45 2026] [::1]:42500 Closing
+[Tue Mar 31 18:37:27 2026] [::1]:56478 Accepted
+[Tue Mar 31 18:37:27 2026] [::1]:56478 [200]: GET /
+[Tue Mar 31 18:37:27 2026] [::1]:56478 Closing
+[Tue Mar 31 18:37:27 2026] [::1]:56484 Accepted
+[Tue Mar 31 18:37:27 2026] [::1]:56484 [200]: GET /assets/js/app.js?v=5
+[Tue Mar 31 18:37:27 2026] [::1]:56484 Closing
+[Tue Mar 31 18:37:27 2026] [::1]:56496 Accepted
+[Tue Mar 31 18:37:27 2026] [::1]:56496 [200]: GET /assets/js/crm-logic.js?v=5
+[Tue Mar 31 18:37:27 2026] [::1]:56496 Closing
+[Tue Mar 31 18:37:27 2026] [::1]:56512 Accepted
+[Tue Mar 31 18:37:27 2026] [::1]:56512 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:37:27 2026] [::1]:56512 Closing
+[Tue Mar 31 18:37:27 2026] [::1]:56528 Accepted
+[Tue Mar 31 18:37:27 2026] [::1]:56528 [200]: GET /api/auth/me
+[Tue Mar 31 18:37:27 2026] [::1]:56528 Closing
+[Tue Mar 31 18:37:27 2026] [::1]:56534 Accepted
+[Tue Mar 31 18:37:27 2026] [::1]:56534 [200]: GET /api/clientes
+[Tue Mar 31 18:37:27 2026] [::1]:56534 Closing
+[Tue Mar 31 18:37:27 2026] [::1]:56536 Accepted
+[Tue Mar 31 18:37:27 2026] [::1]:56536 [200]: GET /api/clientes
+[Tue Mar 31 18:37:27 2026] [::1]:56536 Closing
+[Tue Mar 31 18:38:24 2026] [::1]:33298 Accepted
+[Tue Mar 31 18:38:24 2026] [::1]:33298 [200]: GET /
+[Tue Mar 31 18:38:24 2026] [::1]:33298 Closing
+[Tue Mar 31 18:38:24 2026] [::1]:33312 Accepted
+[Tue Mar 31 18:38:24 2026] [::1]:33312 [200]: GET /assets/js/app.js?v=7
+[Tue Mar 31 18:38:24 2026] [::1]:33312 Closing
+[Tue Mar 31 18:38:24 2026] [::1]:33318 Accepted
+[Tue Mar 31 18:38:24 2026] [::1]:33318 [200]: GET /assets/js/crm-logic.js?v=7
+[Tue Mar 31 18:38:24 2026] [::1]:33318 Closing
+[Tue Mar 31 18:38:24 2026] [::1]:33324 Accepted
+[Tue Mar 31 18:38:24 2026] [::1]:33324 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:38:24 2026] [::1]:33324 Closing
+[Tue Mar 31 18:38:24 2026] [::1]:33326 Accepted
+[Tue Mar 31 18:38:24 2026] [::1]:33326 [200]: GET /api/auth/me
+[Tue Mar 31 18:38:24 2026] [::1]:33326 Closing
+[Tue Mar 31 18:38:24 2026] [::1]:33336 Accepted
+[Tue Mar 31 18:38:24 2026] [::1]:33336 [200]: GET /api/clientes
+[Tue Mar 31 18:38:24 2026] [::1]:33336 Closing
+[Tue Mar 31 18:38:24 2026] [::1]:33340 Accepted
+[Tue Mar 31 18:38:24 2026] [::1]:33340 [200]: GET /api/clientes
+[Tue Mar 31 18:38:24 2026] [::1]:33340 Closing
+[Tue Mar 31 18:42:36 2026] [::1]:52514 Accepted
+[Tue Mar 31 18:42:36 2026] [::1]:52514 [200]: GET /
+[Tue Mar 31 18:42:36 2026] [::1]:52514 Closing
+[Tue Mar 31 18:42:36 2026] [::1]:52522 Accepted
+[Tue Mar 31 18:42:36 2026] [::1]:52524 Accepted
+[Tue Mar 31 18:42:36 2026] [::1]:52522 [200]: GET /assets/js/app.js?v=7
+[Tue Mar 31 18:42:36 2026] [::1]:52522 Closing
+[Tue Mar 31 18:42:36 2026] [::1]:52524 [200]: GET /assets/js/crm-logic.js?v=7
+[Tue Mar 31 18:42:36 2026] [::1]:52524 Closing
+[Tue Mar 31 18:42:36 2026] [::1]:52540 Accepted
+[Tue Mar 31 18:42:36 2026] [::1]:52540 [200]: GET /assets/css/style.css
+[Tue Mar 31 18:42:36 2026] [::1]:52540 Closing
+[Tue Mar 31 18:42:36 2026] [::1]:52544 Accepted
+[Tue Mar 31 18:42:36 2026] [::1]:52544 [200]: GET /api/auth/me
+[Tue Mar 31 18:42:36 2026] [::1]:52544 Closing
+[Tue Mar 31 18:42:36 2026] [::1]:52554 Accepted
+[Tue Mar 31 18:42:36 2026] [::1]:52554 [200]: GET /api/clientes
+[Tue Mar 31 18:42:36 2026] [::1]:52554 Closing
+[Tue Mar 31 18:42:36 2026] [::1]:52560 Accepted
+[Tue Mar 31 18:42:36 2026] [::1]:52560 [200]: GET /api/clientes
+[Tue Mar 31 18:42:36 2026] [::1]:52560 Closing
+[Tue Mar 31 18:42:37 2026] [::1]:52570 Accepted
+[Tue Mar 31 18:42:38 2026] [::1]:52570 [200]: GET /api/pagos
+[Tue Mar 31 18:42:38 2026] [::1]:52570 Closing
+[Tue Mar 31 18:42:38 2026] [::1]:52574 Accepted
+[Tue Mar 31 18:42:40 2026] [::1]:52574 [200]: GET /api/empleados
+[Tue Mar 31 18:42:40 2026] [::1]:52574 Closing
+[Tue Mar 31 18:42:40 2026] [::1]:52584 Accepted
+[Tue Mar 31 18:42:42 2026] [::1]:52584 [200]: GET /api/empleados
+[Tue Mar 31 18:42:42 2026] [::1]:52584 Closing
+[Tue Mar 31 18:42:45 2026] [::1]:33882 Accepted
+[Tue Mar 31 18:42:51 2026] [::1]:33882 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 18:42:51 2026] [::1]:33882 Closing
+[Tue Mar 31 18:42:51 2026] [::1]:32862 Accepted
+[Tue Mar 31 18:42:51 2026] [::1]:32862 [200]: GET /api/stats
+[Tue Mar 31 18:42:51 2026] [::1]:32862 Closing
+[Tue Mar 31 18:42:52 2026] [::1]:32864 Accepted
+[Tue Mar 31 18:42:56 2026] [::1]:32864 [200]: GET /api/pagos
+[Tue Mar 31 18:42:56 2026] [::1]:32864 Closing
+[Tue Mar 31 18:42:58 2026] [::1]:32876 Accepted
+[Tue Mar 31 18:43:01 2026] [::1]:32876 [200]: GET /api/clientes
+[Tue Mar 31 18:43:01 2026] [::1]:32876 Closing
+[Tue Mar 31 18:43:01 2026] [::1]:59416 Accepted
+[Tue Mar 31 18:43:02 2026] [::1]:59416 [200]: GET /api/pagos
+[Tue Mar 31 18:43:02 2026] [::1]:59416 Closing
+[Tue Mar 31 18:43:04 2026] [::1]:59430 Accepted
+[Tue Mar 31 18:43:10 2026] [::1]:59430 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Mar 31 18:43:10 2026] [::1]:59430 Closing
+[Tue Mar 31 18:43:10 2026] [::1]:59444 Accepted
+[Tue Mar 31 18:43:13 2026] [::1]:59444 [200]: GET /api/stats
+[Tue Mar 31 18:43:13 2026] [::1]:59444 Closing
+[Tue Mar 31 18:43:15 2026] [::1]:36970 Accepted
+[Tue Mar 31 18:43:15 2026] [::1]:36970 [200]: GET /api/pagos
+[Tue Mar 31 18:43:15 2026] [::1]:36970 Closing
+[Tue Mar 31 18:43:16 2026] [::1]:36978 Accepted
+[Tue Mar 31 18:43:20 2026] [::1]:36978 [200]: GET /api/pagos
+[Tue Mar 31 18:43:20 2026] [::1]:36978 Closing
+[Tue Mar 31 18:43:21 2026] [::1]:36986 Accepted
+[Tue Mar 31 18:43:23 2026] [::1]:36986 [200]: GET /api/pagos
+[Tue Mar 31 18:43:23 2026] [::1]:36986 Closing

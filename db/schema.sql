@@ -1,5 +1,4 @@
--- Sistema de CodaERP: Base de Datos
--- Pregunta 9: Tablas y campos que tiene la base de datos
+-- Sistema de CodaERP: Base de Datos con Control de Roles (RBAC)
 
 CREATE TABLE IF NOT EXISTS clientes (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -7,7 +6,7 @@ CREATE TABLE IF NOT EXISTS clientes (
     email VARCHAR(150) UNIQUE NOT NULL,
     telefono VARCHAR(20),
     empresa VARCHAR(100),
-    segmento VARCHAR(50) DEFAULT 'General', -- B2B, B2C, VIP
+    segmento VARCHAR(50) DEFAULT 'General',
     fecha_registro DATETIME DEFAULT CURRENT_TIMESTAMP,
     activo BOOLEAN DEFAULT 1
 );
@@ -32,9 +31,9 @@ CREATE TABLE IF NOT EXISTS pedidos (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     cliente_id INTEGER NOT NULL,
     fecha_pedido DATETIME DEFAULT CURRENT_TIMESTAMP,
-    estado VARCHAR(30) DEFAULT 'Pendiente', -- Pendiente, Pagado, Enviado, Entregado, Cancelado
+    estado VARCHAR(30) DEFAULT 'Pendiente',
     total DECIMAL(10,2) NOT NULL DEFAULT 0.00,
-    metodo_pago VARCHAR(50), -- Tarjeta, Transferencia, Cripto
+    metodo_pago VARCHAR(50),
     FOREIGN KEY (cliente_id) REFERENCES clientes(id)
 );
 
@@ -49,17 +48,22 @@ CREATE TABLE IF NOT EXISTS pedido_lineas (
     FOREIGN KEY (producto_id) REFERENCES productos(id)
 );
 
-CREATE TABLE IF NOT EXISTS logs_auditoria (
+CREATE TABLE IF NOT EXISTS usuarios (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    entidad VARCHAR(50) NOT NULL,
-    entidad_id INTEGER NOT NULL,
-    accion VARCHAR(20) NOT NULL, -- CREATE, UPDATE, DELETE
-    fecha DATETIME DEFAULT CURRENT_TIMESTAMP,
-    usuario_id INTEGER, -- Quién hizo el cambio
-    detalles_json TEXT -- Payload con el estado anterior y nuevo
+    nombre VARCHAR(100) NOT NULL,
+    email VARCHAR(150) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    rol VARCHAR(50) DEFAULT 'Empleado', -- Admin, Empleado
+    fecha_alta DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
--- Datos por defecto para demostración
+-- Datos por defecto
+
+-- Hashes generados con password_hash de PHP (Bcrypt). El pass es: '1234' para ambos.
+INSERT INTO usuarios (nombre, email, password_hash, rol) VALUES 
+('Administrador', 'admin@codaerp.com', '$2y$12$l7xYbTVaRGNUodVMpkeVy.vqsxZHh3BpsrcXsYvffEASOly2GVXaq', 'Admin'),
+('Comercial Ventas', 'ventas@codaerp.com', '$2y$12$l7xYbTVaRGNUodVMpkeVy.vqsxZHh3BpsrcXsYvffEASOly2GVXaq', 'Empleado');
+
 INSERT INTO categorias (nombre) VALUES ('Electrónica'), ('Software'), ('Servicios'), ('Oficina');
 INSERT INTO clientes (nombre, email, empresa, segmento) VALUES 
 ('Ana García', 'ana@techsol.com', 'Tech Solutions', 'B2B'),
@@ -67,9 +71,8 @@ INSERT INTO clientes (nombre, email, empresa, segmento) VALUES
 ('María López', 'mlopez@freelance.net', null, 'B2C');
 
 INSERT INTO productos (nombre, descripcion, precio, stock, categoria_id) VALUES
-('Licencia ERP Cloud Anual', 'Suscripción SaaS ERP módulo base', 1200.00, 999, 2),
-('Terminal TPV Inteligente', 'Hardware Android con NFC', 350.50, 45, 1),
-('Consultoría Implementación', '10 horas de configuración experta', 800.00, 100, 3);
+('Licencia ERP Cloud Anual', 'Suscripción SaaS', 1200.00, 999, 2),
+('Terminal TPV Inteligente', 'Hardware Android', 350.50, 45, 1);
 
 INSERT INTO pedidos (cliente_id, estado, total, metodo_pago) VALUES
 (1, 'Pagado', 1550.50, 'Transferencia'),

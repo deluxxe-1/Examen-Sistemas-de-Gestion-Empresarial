@@ -14,6 +14,9 @@ $path = parse_url($request_uri, PHP_URL_PATH);
 // Extraemos las partes
 $parts = explode('/', trim($path, '/'));
 
+// Iniciar sesión para el Role Based Access Control
+session_start();
+
 // Identificar recurso y acción
 $recurso = isset($parts[1]) ? $parts[1] : ''; // ej: clientes
 $id = isset($parts[2]) ? $parts[2] : null;    // ej: 1
@@ -24,7 +27,28 @@ $body = json_decode(file_get_contents('php://input'), true);
 $db = Database::getInstance();
 
 try {
+    // Si no es el endpoint de autenticación, requerimos sesión
+    if ($recurso !== 'auth') {
+        if (!isset($_SESSION['usuario_id'])) {
+            http_response_code(401);
+            echo json_encode(['error' => 'Unauthorized. Ingresa sesión.']);
+            exit;
+        }
+
+        // Hard RBAC para endpoints de criptografía
+        if ($recurso === 'crypto' && $_SESSION['rol'] !== 'Admin') {
+            http_response_code(403);
+            echo json_encode(['error' => 'Forbidden. Requires Admin.']);
+            exit;
+        }
+    }
+
     switch ($recurso) {
+        case 'auth':
+            require_once 'endpoints/auth.php';
+            handle_auth($db, $method, $id, $body);
+            break;
+            
         case 'clientes':
             require_once 'endpoints/clientes.php';
             handle_clientes($db, $method, $id, $body);
@@ -35,9 +59,14 @@ try {
             handle_productos($db, $method, $id, $body);
             break;
             
-        case 'pedidos':
-            require_once 'endpoints/pedidos.php';
-            handle_pedidos($db, $method, $id, $body);
+        case 'pagos':
+            require_once 'endpoints/pagos.php';
+            handle_pagos($db, $method, $id, $body);
+            break;
+
+        case 'empleados':
+            require_once 'endpoints/empleados.php';
+            handle_empleados($db, $method, $id, $body);
             break;
 
         case 'crypto':
